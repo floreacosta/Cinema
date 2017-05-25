@@ -1,0 +1,17 @@
+﻿<header class="global-header">
+	<h1 class="cinema-logo">Cine</h1>
+	<nav class="nav-bar">
+		<a href="" class="nav-item">Estrenos</a>
+		<a href="" class="nav-item">Cartelera</a>
+		<a href="" class="nav-item">Reservas</a>
+	</nav>
+
+	@{
+		if (ViewBag["isLoggedIn"])
+		{
+			@Html.Partial("_logout")
+		}
+	}
+
+	@Html.Partial("_login")
+</header>

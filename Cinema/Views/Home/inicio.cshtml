@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "inicio";
+		Layout = "/Views/Shared/_layout.cshtml";
+}
+
+<section class="cartelera-list">
+	<h3>Cartelera</h3>
+	<ul class="news-list">
+
+		@*aca crear un foreach para entregar un listado de peliculas con el item*@
+		<li class="item">
+			<figure class="item-image">
+				<img src="" />
+			</figure>
+			<div class="item-information">
+				<h2>Harry Potter</h2>
+				<span class="informacion-genero">Genero</span>
+				<span class="informacion-clasificacion">Clasificacion</span>
+				<a href="~/peliculas/reserva" class="button-reserve-online">Reservas</a>
+			</div>
+		</li>
+
+	</ul>
+</section>
