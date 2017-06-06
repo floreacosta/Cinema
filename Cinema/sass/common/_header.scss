@@ -31,12 +31,6 @@ button {
 	text-align: center;
 }
 
-.welcome-message {
-}
-
-.button-logon {
-}
-
 header {
 	background: $color-rojo;
 	padding: 1.5em;
@@ -148,5 +142,46 @@ header {
 
 	&:after {
 		@include transform(rotate(45deg));
+	}
+}
+
+@media (min-width: 900px) {
+	.user {
+		padding: 20px 10px;
+	}
+
+	.menu-icon,
+	.button-close {
+		display: none;
+	}
+
+	.nav-list {
+		display: inline-block;
+		position: relative;
+		background: transparent;
+		height: auto;
+		@include display-flex;
+		@include justify-content(flex-end);
+
+
+		&:before,
+		&:after {
+			display: none;
+		}
+	}
+
+	.nav-item {
+		background: transparent;
+		padding: 10px 15px;
+		border-bottom: 0px;
+
+		&:hover {
+			color: $color-texto-destacado;
+			text-decoration: underline;
+		}
+
+		&:active {
+			background: transparent;
+		}
 	}
 }
