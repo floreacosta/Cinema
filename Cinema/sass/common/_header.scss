@@ -1,0 +1,152 @@
+﻿@import "compass/css3/transform";
+@import "compass/css3/box-shadow";
+@import "compass/css3/flexbox";
+@import "../_variables.scss";
+@import "../_mixin.scss";
+
+button {
+	background: none;
+	border: 0px;
+}
+
+.user {
+  padding: 20px 10px;
+	@include display-flex;
+}
+
+.log-in,
+.loged-in {
+	width: 50%;
+	display: inline-block;
+}
+
+.loged-in {
+	border-right: solid 1px $color-texto;
+	@include display-flex;
+	@include justify-content(space-between);
+	padding-right: 20px;
+}
+
+.log-in {
+	text-align: center;
+}
+
+.welcome-message {
+}
+
+.button-logon {
+}
+
+header {
+	background: $color-rojo;
+	padding: 1.5em;
+	width: 100%;
+	@include box-shadow($color-texto-destacado 2px 2px 5px);
+}
+
+.cinema-logo {
+	@include header-nivel-1();
+	display: inline-block;
+	color: $color-blanco;
+	width: 20%;
+	vertical-align: middle;
+}
+
+.nav-bar {
+	display: inline-block;
+	width: 78%;
+	text-align: right;
+	vertical-align: middle;
+}
+
+.nav-list {
+  background: $color-blanco;
+  position: absolute;
+  right: 0px;
+  height: 100vh;
+  top: 0px;
+  min-width: 50%;
+	z-index: 1;
+	display: none;
+
+	&:after {
+		content: '';
+		width: 100vw;
+		height: 100vh;
+		background: $color-texto;
+		position: fixed;
+		opacity: .6;
+		display: inline-block;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		top: 0px;
+		z-index: -1;
+	}
+
+	&.menu-abierto {
+		display: inline-block;
+	}
+}
+
+.nav-item {
+	@include header-nivel-3();
+	@include fuente-bold();
+	text-decoration: none;
+	display: inline-block;
+	color: $color-blanco;
+  padding: 20px;
+	background-color: $color-texto-destacado;
+	border-bottom: solid 1px $color-blanco;
+	display: block;
+	width: 100%;
+
+	&:active {
+		color: $color-texto;
+		background: $color-blanco;
+		border-bottom: solid 1px $color-texto;
+	}
+}
+
+.menu-icon {
+    font-size: 0px;
+    position: relative;
+    width: 37px;
+    height: auto;
+    display: inline-block;
+
+	hr {
+		display: inline-block;
+    height: 2px;
+		background: $color-blanco;
+    width: 100%;
+    margin: 4px 0px;
+    position: relative;
+	}
+}
+
+.button-close {
+	position: absolute;
+  left: -40px;
+  top: 20px;
+	font-size: 0px;
+
+	&:before,
+	&:after {
+		content: '';
+		width: 15px;
+		height: 2px;
+		display: inline-block;
+		background: $color-blanco;
+		position: relative;
+	}
+
+	&:before {
+		@include transform(rotate(-45deg));
+		left: 15px;
+	}
+
+	&:after {
+		@include transform(rotate(45deg));
+	}
+}

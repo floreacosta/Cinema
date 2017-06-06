@@ -1,0 +1,9 @@
+﻿@import "../_variables.scss";
+@import "../_mixin.scss";
+
+footer {
+	background: $color-azul;
+	padding: 20px 16px;
+	display: inline-block;
+	width: 100%;
+}

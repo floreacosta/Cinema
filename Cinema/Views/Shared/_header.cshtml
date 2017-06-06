@@ -1,17 +1,21 @@
-﻿<header class="global-header">
+﻿<div class="user">
+	@Html.Partial("_logout")
+	@Html.Partial("_login")
+</div>
+<header class="global-header">
 	<h1 class="cinema-logo">Cine</h1>
 	<nav class="nav-bar">
-		<a href="" class="nav-item">Estrenos</a>
-		<a href="" class="nav-item">Cartelera</a>
-		<a href="" class="nav-item">Reservas</a>
+		<button onclick="abrirMenu()" class="menu-icon">
+			Menu
+			<hr />
+			<hr />
+			<hr />
+		</button>
+		<ul class="nav-list" id="menu">
+			<li><button onclick="cerrarMenu()" class="button-close">Cerrar</button></li>
+			<li><a href="" class="nav-item">Estrenos</a></li>
+			<li><a href="" class="nav-item">Cartelera</a></li>
+			<li><a href="" class="nav-item">Reservas</a></li>
+		</ul>
 	</nav>
-
-	@{
-		if (ViewBag["isLoggedIn"])
-		{
-			@Html.Partial("_logout")
-		}
-	}
-
-	@Html.Partial("_login")
 </header>

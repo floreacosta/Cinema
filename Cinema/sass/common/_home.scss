@@ -1,0 +1,71 @@
+﻿@import "compass/css3/box-shadow";
+@import "compass/css3/border-radius";
+@import "../_variables.scss";
+@import "../_mixin.scss";
+
+section {
+	padding: 20px 16px;
+}
+
+h3 {
+	@include header-nivel-2();
+	@include fuente-bold();
+	margin-bottom: 10px;
+}
+
+.news-list {
+	width: 100%;
+}
+
+.item {
+	width: 100%;
+	background: $color-texto-destacado;
+	@include box-shadow($color-texto-destacado 2px 2px 5px);
+	padding: 20px;
+	margin-bottom: 20px;
+
+	.item-image {
+		width: 100%;
+		height: 15em;
+		background: $color-blanco;
+	}
+
+	.item-information {
+		margin-top: 10px;
+		color: $color-blanco;
+
+		h2 {
+			@include header-nivel-2();
+			@include fuente-bold();
+			color: $color-blanco;
+			margin-bottom: 20px;
+		}
+	}
+
+	.informacion-genero {
+		width: 50%;
+		text-align: left;
+		display: inline-block;
+		float: left;
+		color: $color-blanco;
+	}
+
+	.informacion-clasificacion {
+		@extend .informacion-genero;
+		text-align: right;
+		float: none;
+	}
+
+	.button-reserve-online {
+		color: $color-blanco;
+		margin-top: 20px;
+		@include border-radius(15px);
+		display: block;
+		text-align: center;
+		background: $color-alerta-1;
+		padding: 10px 5px;
+		text-decoration: none;
+		text-transform: uppercase;
+		@include box-shadow($color-azul 2px 2px 5px);
+	}
+}

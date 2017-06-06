@@ -108,6 +108,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\administracionController.cs" />
+    <Compile Include="Controllers\homeController.cs" />
+    <Compile Include="Controllers\peliculasController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -118,6 +121,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Global.asax" />
+    <Content Include="js\query.js" />
+    <Content Include="stylesheets\ie.css" />
+    <Content Include="stylesheets\print.css" />
+    <Content Include="stylesheets\screen.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -129,11 +136,49 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.rb" />
+    <Content Include="sass\ie.scss" />
+    <Content Include="sass\print.scss" />
+    <Content Include="sass\screen.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_header.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_footer.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_login.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_logout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\home\inicio.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sass\_mixin.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sass\_variables.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sass\common\_header.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sass\common\_home.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sass\common\_footer.scss" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

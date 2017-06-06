@@ -66,3 +66,286 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/* line 11, ../sass/screen.scss */
+* {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: black;
+  list-style-type: none;
+  border: 0px;
+}
+
+/* line 6, ../sass/common/_home.scss */
+section {
+  padding: 20px 16px;
+}
+
+/* line 10, ../sass/common/_home.scss */
+h3 {
+  font-size: 1.5em;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-weight: normal;
+  font-variant: normal;
+  font-style: normal;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-weight: bold;
+  font-variant: normal;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+/* line 16, ../sass/common/_home.scss */
+.news-list {
+  width: 100%;
+}
+
+/* line 20, ../sass/common/_home.scss */
+.item {
+  width: 100%;
+  background: grey;
+  -moz-box-shadow: grey 2px 2px 5px;
+  -webkit-box-shadow: grey 2px 2px 5px;
+  box-shadow: grey 2px 2px 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+/* line 27, ../sass/common/_home.scss */
+.item .item-image {
+  width: 100%;
+  height: 15em;
+  background: white;
+}
+/* line 33, ../sass/common/_home.scss */
+.item .item-information {
+  margin-top: 10px;
+  color: white;
+}
+/* line 37, ../sass/common/_home.scss */
+.item .item-information h2 {
+  font-size: 1.5em;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-weight: normal;
+  font-variant: normal;
+  font-style: normal;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-weight: bold;
+  font-variant: normal;
+  font-style: normal;
+  color: white;
+  margin-bottom: 20px;
+}
+/* line 45, ../sass/common/_home.scss */
+.item .informacion-genero, .item .informacion-clasificacion {
+  width: 50%;
+  text-align: left;
+  display: inline-block;
+  float: left;
+  color: white;
+}
+/* line 53, ../sass/common/_home.scss */
+.item .informacion-clasificacion {
+  text-align: right;
+  float: none;
+}
+/* line 59, ../sass/common/_home.scss */
+.item .button-reserve-online {
+  color: white;
+  margin-top: 20px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  display: block;
+  text-align: center;
+  background: #d6322b;
+  padding: 10px 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -moz-box-shadow: #1c415b 2px 2px 5px;
+  -webkit-box-shadow: #1c415b 2px 2px 5px;
+  box-shadow: #1c415b 2px 2px 5px;
+}
+
+/* line 7, ../sass/common/_header.scss */
+button {
+  background: none;
+  border: 0px;
+}
+
+/* line 12, ../sass/common/_header.scss */
+.user {
+  padding: 20px 10px;
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* line 17, ../sass/common/_header.scss */
+.log-in,
+.loged-in {
+  width: 50%;
+  display: inline-block;
+}
+
+/* line 23, ../sass/common/_header.scss */
+.loged-in {
+  border-right: solid 1px black;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+/* line 30, ../sass/common/_header.scss */
+.log-in {
+  text-align: center;
+}
+
+/* line 40, ../sass/common/_header.scss */
+header {
+  background: #d6322b;
+  padding: 1.5em;
+  width: 100%;
+  -moz-box-shadow: grey 2px 2px 5px;
+  -webkit-box-shadow: grey 2px 2px 5px;
+  box-shadow: grey 2px 2px 5px;
+}
+
+/* line 47, ../sass/common/_header.scss */
+.cinema-logo {
+  font-size: 2em;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-weight: bold;
+  font-variant: normal;
+  font-style: normal;
+  display: inline-block;
+  color: white;
+  width: 20%;
+  vertical-align: middle;
+}
+
+/* line 55, ../sass/common/_header.scss */
+.nav-bar {
+  display: inline-block;
+  width: 78%;
+  text-align: right;
+  vertical-align: middle;
+}
+
+/* line 62, ../sass/common/_header.scss */
+.nav-list {
+  background: white;
+  position: absolute;
+  right: 0px;
+  height: 100vh;
+  top: 0px;
+  min-width: 50%;
+  z-index: 1;
+  display: none;
+}
+/* line 72, ../sass/common/_header.scss */
+.nav-list:after {
+  content: '';
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  position: fixed;
+  opacity: .6;
+  display: inline-block;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  z-index: -1;
+}
+/* line 87, ../sass/common/_header.scss */
+.nav-list.menu-abierto {
+  display: inline-block;
+}
+
+/* line 92, ../sass/common/_header.scss */
+.nav-item {
+  font-size: 1em;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-weight: normal;
+  font-variant: normal;
+  font-style: normal;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-weight: bold;
+  font-variant: normal;
+  font-style: normal;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 20px;
+  background-color: grey;
+  border-bottom: solid 1px white;
+  display: block;
+  width: 100%;
+}
+/* line 104, ../sass/common/_header.scss */
+.nav-item:active {
+  color: black;
+  background: white;
+  border-bottom: solid 1px black;
+}
+
+/* line 111, ../sass/common/_header.scss */
+.menu-icon {
+  font-size: 0px;
+  position: relative;
+  width: 37px;
+  height: auto;
+  display: inline-block;
+}
+/* line 118, ../sass/common/_header.scss */
+.menu-icon hr {
+  display: inline-block;
+  height: 2px;
+  background: white;
+  width: 100%;
+  margin: 4px 0px;
+  position: relative;
+}
+
+/* line 128, ../sass/common/_header.scss */
+.button-close {
+  position: absolute;
+  left: -40px;
+  top: 20px;
+  font-size: 0px;
+}
+/* line 134, ../sass/common/_header.scss */
+.button-close:before, .button-close:after {
+  content: '';
+  width: 15px;
+  height: 2px;
+  display: inline-block;
+  background: white;
+  position: relative;
+}
+/* line 144, ../sass/common/_header.scss */
+.button-close:before {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  left: 15px;
+}
+/* line 149, ../sass/common/_header.scss */
+.button-close:after {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 4, ../sass/common/_footer.scss */
+footer {
+  background: #1c415b;
+  padding: 20px 16px;
+  display: inline-block;
+  width: 100%;
+}
